@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ada'nın Oyun Dünyası - Sayı Tahmini</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <!-- Oyun Kartı Konteyeri-->
+             <div class="game-container">
+                <h1>Sayı Tahmin Oyunu</h1>
+                <p class="description">1 ile 100 arasında bir sayı tahmin edin.</p>
+             </div>
+
+             <!-- Kullanıcının sayı gireceği alan-->
+              <input type="number" id="guessInput" placeholder="Tahminin nedir?" min="1" max="100">
+
+              <!-- Tahmin etme butonu-->
+               <button id="guessButton">Tahmin Et</button>
+
+               <!-- Bilgisayarın ipucu vereceği mesaj alanı (Yukarı/Aşağı)-->
+                <p id="message" class="message"> İlk tahminin bekliyorum...</p>
+
+                <!--Kalan Hak Sayısı-->
+                <p class="attempts">Kalan Hak: <span id="rightCount">7</span></p>
+                <script src="script.js"></script>
+        </body>

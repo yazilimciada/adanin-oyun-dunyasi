@@ -1,0 +1,67 @@
+/* Tüm sayfanın arka planını ve yazı tipini ayarlayalım*/
+body
+{
+    background-color:#1a1a2e;/* KOyu modern bi gece mavisi*/
+    color:#ffffff;/* Yazılar bembeyaz olsun*/
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;/* Modern ve okunaklı bir yazı tipi*/
+    display:flex;/* Sayfa içeriğini ortalamak için flexbox kullanıyoruz*/
+    flex-direction:column;/* İçerikleri dikey olarak hizalayalım*/
+    align-items:center;/* İçerikleri yatayda ortalayalım*/
+    justify-content:center;/* İçerikleri dikeyde ortalayalım*/
+    min-height:100vh;/* Ekranı tam ortalasın*/
+    margin:0;/* Varsayılan marginleri kaldırıyoruz*/
+}
+/* 2. Oyun kartımızı kutuya alıp güzelleştirelim*/
+.game-container
+{
+    background:#161625;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 24px rgb(0,0,0, 0.3);/* Arkaya hafif bi gölge*/
+    text-align:center;/* İçerikleri ortalayalım*/
+    width:350px;/* Kartın genişliğini ayarlayalım*/
+    border:2px solid #e94560; /* Neon kırmızı/pembe bi çerceve */
+}
+/* 3. Başlığımıza hafif parıltı efekti ekleyelim*/
+h1
+{
+    color:#e94560;/* Neon kırmızı/pembe*/
+    margin-bottom:10px;
+    text-shadow:0 0 10px rgb(233,69,96,0.5);/* Hafif neon parlamsı*/
+}
+/* 4. Sayı girilen kutuyu (Input) düzenleyelim*/
+input[type="number"]
+{
+    width:80px;
+    padding:10px;
+    font-size:18px;
+    border-radius:8px;
+    border:2px solid #0f3460;
+    background-color:#1a1a2e;
+    color:#fff;
+    text-align:center;
+    margin-top:15px;
+    outline:none;/* Tıklayınca mavi çerçeve olmasın*/
+}
+/* 5.Tahmin et butonumuzu canlandıralım ve animasyon ekleyelim*/
+button
+{
+    background-color:#e94560;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+    transition:all 0.3s ease;/* Yumuşak geçiş animasyonu*/
+}
+/* Butonun üzerine gelince (Hover) ne olsun? */
+button:hover
+{
+    background-color:#ff6b81;
+    transform:scale(1.05);/* Buton hafifçe büyüsün*/
+    box-shadow:0 0 15px rgb(233,69,96,0.8);/* Neon parlama artsın*/
+
+}
